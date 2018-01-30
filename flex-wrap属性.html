@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-wrap属性</title>
+	<style>
+		/*
+			它可能取三个值。
+
+			（1）nowrap（默认）：不换行。
+			（2）wrap：换行，第一行在上方。
+			（3）wrap-reverse：换行，第一行在下方。
+
+			flex-flow
+			flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。
+
+
+			.box {
+			  flex-flow: <flex-direction> || <flex-wrap>;
+			}
+		*/
+		.box{
+		  flex-wrap: nowrap | wrap | wrap-reverse;
+		}
+		.child {
+			background: #E6A23C;
+			width: 12%;
+			height: 50px;
+			border: 1px solid black;
+		}
+		.nowrap {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		.wrap {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.wrap-reverse {
+			display: flex;
+			flex-wrap: wrap-reverse;
+		}
+		.flex-flow {
+			display: flex;
+			flex-flow: row-reverse wrap;
+		}
+	</style>
+</head>
+<body>
+	nowrap:
+	<div class="nowrap">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+		<div class="child">4</div>
+		<div class="child">5</div>
+		<div class="child">6</div>
+		<div class="child">7</div>
+		<div class="child">8</div>
+		<div class="child">9</div>
+		<div class="child">10</div>
+		<div class="child">11</div>
+		<div class="child">12</div>
+		<div class="child">13</div>
+		<div class="child">14</div>
+		<div class="child">15</div>
+	</div>
+	<br>
+	wrap:
+	<div class="wrap">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+		<div class="child">4</div>
+		<div class="child">5</div>
+		<div class="child">6</div>
+		<div class="child">7</div>
+		<div class="child">8</div>
+		<div class="child">9</div>
+		<div class="child">10</div>
+		<div class="child">11</div>
+		<div class="child">12</div>
+		<div class="child">13</div>
+		<div class="child">14</div>
+		<div class="child">15</div>
+		<div class="child">16</div>
+		<div class="child">17</div>
+	</div>
+	<br>
+	wrap-reverse:
+	<div class="wrap-reverse">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+		<div class="child">4</div>
+		<div class="child">5</div>
+		<div class="child">6</div>
+		<div class="child">7</div>
+		<div class="child">8</div>
+		<div class="child">9</div>
+		<div class="child">10</div>
+		<div class="child">11</div>
+		<div class="child">12</div>
+		<div class="child">13</div>
+		<div class="child">14</div>
+		<div class="child">15</div>
+		<div class="child">16</div>
+		<div class="child">17</div>
+	</div>
+	<br>
+	flex-flow:
+	<div class="flex-flow">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+		<div class="child">4</div>
+		<div class="child">5</div>
+		<div class="child">6</div>
+		<div class="child">7</div>
+		<div class="child">8</div>
+		<div class="child">9</div>
+		<div class="child">10</div>
+		<div class="child">11</div>
+		<div class="child">12</div>
+		<div class="child">13</div>
+		<div class="child">14</div>
+		<div class="child">15</div>
+		<div class="child">16</div>
+		<div class="child">17</div>
+	</div>
+</body>
+</html>

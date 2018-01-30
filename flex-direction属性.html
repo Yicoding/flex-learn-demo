@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-direction属性</title>
+	<style>
+		/*
+			row（默认值）：主轴为水平方向，起点在左端。
+			row-reverse：主轴为水平方向，起点在右端。
+			column：主轴为垂直方向，起点在上沿。
+			column-reverse：主轴为垂直方向，起点在下沿。
+		*/
+		.box {
+			display: flex;
+		  	flex-direction: row | row-reverse | column | column-reverse;
+		}
+		.child {
+			background: #E6A23C;
+			margin: 10px;
+		}
+		.row {
+			display: flex;
+		  	flex-direction: row;
+		}
+		.row-reverse {
+			display: flex;
+		  	flex-direction: row-reverse;
+		}
+		.column {
+			display: flex;
+		  	flex-direction: column;
+		}
+		.column-reverse {
+			display: flex;
+		  	flex-direction: column-reverse;
+		}
+	</style>
+</head>
+<body>
+	row:
+	<div class="row">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+		
+	</div>
+	<br>
+	row-reverse:
+	<div class="row-reverse">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+	</div>
+	<br>
+	column:
+	<div class="column">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+		<span>4</span>
+		<span>5</span>
+		<span>6</span>
+		7
+		8
+	</div>
+	<br>
+	column-reverse:
+	<div class="column-reverse">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+	</div>
+</body>
+</html>

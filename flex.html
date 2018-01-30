@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <style>
+        .parent-one {
+            height: 80px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .child-one {
+            background: blue;
+            width: 80px;
+        }
+        .child-two {
+            background: green;
+            flex: 1;
+        }
+        .parent-two {
+            display: flex;
+            height: 200px;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .child-1 {
+            background: green;
+            height: 50px;
+            width: 50px;
+        }
+        .child-2 {
+            background: red;
+            height: 80px;
+            width: 80px;
+        }
+        .box {
+            display: flex;
+        }
+        .cell {
+            /* flex: 1; */
+        }
+        .cell:first-child {
+            background: red;
+            flex: 0 0 20%;
+        }
+        .cell:nth-child(2) {
+            background: blue;
+            flex: 0 0 50%;
+        }
+        .cell:last-child {
+            background: green;
+            flex: 0 0 20%;
+        }
+    </style>
+</head>
+<body>
+    1.父元素下存在两个子元素，第一个子元素占据60px，第二个子元素占据剩下的空间
+    <div class="parent-one">
+        <div class="child-one"></div>
+        <div class="child-two"></div>
+    </div>
+    2.父元素下存在两个子元素，垂直居中
+    <div class="parent-two">
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+    </div>
+    3.百分比布局
+    <div class="box">
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+    </div>
+</body>
+</html>

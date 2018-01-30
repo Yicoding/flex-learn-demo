@@ -1,0 +1,118 @@
+header, section, footer {
+    display: flex;
+    margin: 10px;
+}
+.box {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.ball {
+   width: 30px;
+   height: 30px;
+   background: black;
+   border-radius: 50%; 
+}
+/*one-ball*/
+.box-top-center {
+    justify-content: center;
+}
+.box-top-right {
+    justify-content: flex-end;
+}
+.box-center-left {
+    align-items: center;
+}
+.box-center-center {
+    justify-content: center;
+    align-items: center;
+}
+.box-center-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+.box-bottom-left {
+    align-items: flex-end;
+}
+.box-bottom-center {
+    align-items: flex-end;
+    justify-content: center;
+}
+.box-bottom-right {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+/*two-ball*/
+.box-top-between {
+    justify-content: space-between;
+}
+.box-left-between {
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.box-center-between {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-right-between {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.ball-center {
+    align-self: center;
+}
+.box-space {
+    justify-content: space-between;
+}
+.ball-right {
+    align-self: flex-end;
+}
+.box-four {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between; 
+}
+.box-column {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.parent {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .box-column {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.parent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
+.six-one {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.six-two {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.six-three {
+    flex-wrap: wrap;
+}
+.child {
+    display: flex;
+    flex-basis: 100%;
+}
+.child-two {
+    justify-content: center;
+}
+.child-three {
+    justify-content: space-between;
+}

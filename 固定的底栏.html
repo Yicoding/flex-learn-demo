@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>固定的底栏</title>
+    <style>
+        .Site {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        header, footer {
+            height: 60px;
+            background: blue;
+        }
+        .Site-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="Site">
+    <header>header</header>
+    <main class="Site-content">content</main>
+    <footer>footer</footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>align-items属性</title>
+	<style>
+		.child {
+			background: #E6A23C;
+			height: 20px;
+		}
+		.flex-start {
+			display: flex;
+			align-items: flex-start;
+			border: 1px solid #aaa;
+			height: 60px;
+		}
+		.flex-end {
+			display: flex;
+			border: 1px solid #aaa;
+			height: 60px;
+			align-items: flex-end;
+		}
+		.center {
+			display: flex;
+			border: 1px solid #aaa;
+			height: 60px;
+			align-items: center;
+		}
+		.stretch {
+			display: flex;
+			border: 1px solid #aaa;
+			height: 60px;
+			align-items: stretch;
+		}
+		.item {
+			background: blue;
+		}
+		.baseline {
+			display: flex;
+			border: 1px solid #aaa;
+			height: 100px;
+			align-items: baseline;
+		}
+		.base1 {
+			height: 70px;
+			background: blue;
+			padding-top:20px;
+		}
+		.base2 {
+			height: 30px;
+			background: blue;
+		}
+		.base3 {
+			height: 50px;
+			background: blue;
+		}
+		.base4 {
+			height: 80px;
+			background: blue;
+		}
+
+	</style>
+</head>
+<body>
+	flex-start:
+	<div class="flex-start">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+	</div>
+	<br>
+	flex-end:
+	<div class="flex-end">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+	</div>
+	<br>
+	center:
+	<div class="center">
+		<div class="child">1</div>
+		<div class="child">2</div>
+		<div class="child">3</div>
+	</div>
+	<br>
+	stretch:
+	<div class="stretch">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+	<br>
+	baseline:
+	<div class="baseline">
+		<div class="base1">
+			baseline <br>baseline <br>baselinebaselinebaseline
+		</div>
+		<div class="base2">
+			baseline <br>baselinebaselinebaselinebaseline
+		</div>
+		<div class="base3">
+			baseline <br>baselinebaselinebaselinebaseline
+		</div>
+		<div class="base4">
+			baseline <br>baselinebaselinebaselinebaseline
+		</div>
+	</div>
+</body>
+</html>
